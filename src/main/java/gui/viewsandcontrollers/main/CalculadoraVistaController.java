@@ -37,10 +37,11 @@ public class CalculadoraVistaController {
 	public void sumar(ActionEvent event) throws IOException {
 
 		try {
-			int num1 = Integer.parseInt(this.txtNum1.getText());
-			int num2 = Integer.parseInt(this.txtNum2.getText());
+			Double num1 = Double.parseDouble(this.txtNum1.getText());
+			Double num2 = Double.parseDouble(this.txtNum2.getText());
 			Calculadora sumar = new Calculadora();
-			int resultado = sumar.suma(num1, num2);
+			
+			Double resultado = sumar.suma(num1, num2);
 			this.txtResultado.setText(String.valueOf(resultado));
 
 		} catch (NumberFormatException e) {
@@ -57,11 +58,11 @@ public class CalculadoraVistaController {
 	@FXML
 	public void division(ActionEvent event) throws IOException {
 		try {
-			int num1 = Integer.parseInt(this.txtNum1.getText());
-			int num2 = Integer.parseInt(this.txtNum2.getText());
-
+			Double num1 = Double.parseDouble(this.txtNum1.getText());
+			Double num2 = Double.parseDouble(this.txtNum2.getText());
 			Calculadora div = new Calculadora();
-			int resultado = div.dividir(num1, num2);
+			
+			Double resultado = div.dividir(num1, num2);
 			this.txtResultado.setText(String.valueOf(resultado));
 
 		} catch (NumberFormatException e) {
@@ -77,11 +78,11 @@ public class CalculadoraVistaController {
 	@FXML
 	public void multiplicar(ActionEvent event) throws IOException {
 		try {
-			int num1 = Integer.parseInt(this.txtNum1.getText());
-			int num2 = Integer.parseInt(this.txtNum2.getText());
-
+			Double num1 = Double.parseDouble(this.txtNum1.getText());
+			Double num2 = Double.parseDouble(this.txtNum2.getText());
 			Calculadora mult = new Calculadora();
-			int resultado = mult.multiplicar(num1, num2);
+			
+			Double resultado = mult.multiplicar(num1, num2);
 			this.txtResultado.setText(String.valueOf(resultado));
 
 		} catch (NumberFormatException e) {
@@ -97,11 +98,11 @@ public class CalculadoraVistaController {
 	@FXML
 	public void restar(ActionEvent event) throws IOException {
 		try {
-			int num1 = Integer.parseInt(this.txtNum1.getText());
-			int num2 = Integer.parseInt(this.txtNum2.getText());
-
+			Double num1 = Double.parseDouble(this.txtNum1.getText());
+			Double num2 = Double.parseDouble(this.txtNum2.getText());
 			Calculadora restar = new Calculadora();
-			int resultado = restar.restar(num1, num2);
+			
+			Double resultado = restar.restar(num1, num2);
 			this.txtResultado.setText(String.valueOf(resultado));
 
 		} catch (NumberFormatException e) {

@@ -2,8 +2,8 @@ package contenido;
 
 public class Calculadora {
 	
-	private int a;
-	private int b;
+	private Double a;
+	private Double b;
 	
 	
 	public Calculadora() {
@@ -12,52 +12,52 @@ public class Calculadora {
 	}
 
 
-	public Calculadora(int a, int b) {
+	public Calculadora(Double a, Double b) {
 		super();
 		this.a = a;
 		this.b = b;
 	}
 
 
-	public int getA() {
+	public Double getA() {
 		return a;
 	}
 
 
-	public void setA(int a) {
+	public void setA(Double a) {
 		this.a = a;
 	}
 
 
-	public int getB() {
+	public Double getB() {
 		return b;
 	}
 
 
-	public void setB(int b) {
+	public void setB(Double b) {
 		this.b = b;
 	}
 	
-	public int suma(int a, int b) {
-		int resul=0;
+	public Double suma(Double a, Double b) {
+		Double resul=0.0;
 		resul=a+b;
 		return resul;
 	}
 	
-	public int restar(int a, int b) {
-		int resul=0;
+	public Double restar(Double a, Double b) {
+		Double resul=0.0;
 		resul=a-b;
 		return resul;
 	}
 	
-	public int multiplicar(int a, int b) {
-		int resul=0;
+	public Double multiplicar(Double a, Double b) {
+		Double resul=0.0;
 		resul=a*b;
 		return resul;
 	}
 	
-	public int dividir(int a, int b) {
-		int resul=0;
+	public Double dividir(Double a, Double b) {
+		Double resul=0.0;
 		resul=a/b;
 		return resul;
 	}
